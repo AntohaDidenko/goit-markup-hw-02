@@ -5,6 +5,7 @@
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
+  --intermediate-color: #2f303a;
   --accent-text-color: #2196f3;
   --button-color: #ffffff;
 }
@@ -71,9 +72,12 @@ body {
   background-color: rosybrown;
 }
 
+.hero {
+  background-color: var(--intermediate-color);
+}
+
 .header-hero {
   color: var(--button-color);
-  background-color: blue;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -131,15 +135,17 @@ body {
 
 /* Footer */
 
+.footer {
+  background-color: var(--intermediate-color);
+}
+
 .list-link-span {
   color: var(--button-color);
-  background-color: rosybrown;
   text-decoration: none;
 }
 
 .list-link {
   color: rgb(255, 255, 255, 0.6);
-  background-color: rosybrown;
   text-decoration: none;
 }
 
@@ -172,8 +178,9 @@ body {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  color: red;
-  background-color: rosybrown;
+  color: var(--button-color);
+  background-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .list-portfolio {
